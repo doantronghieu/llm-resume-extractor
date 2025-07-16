@@ -150,7 +150,7 @@ Certifications – list of certifications, if available
 Languages – languages the candidate can speak or write\"\"\"
 
 # Extract fields
-file_path = "CV_Doan_Trong_Hieu.pdf"
+file_path = "CV.pdf"
 extracted_data = await extract_fields(file_path, fields_description)
 
 # Validate extracted data using LLM

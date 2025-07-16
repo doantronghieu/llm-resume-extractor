@@ -4,7 +4,7 @@ Extracts structured information from unstructured resume/CV PDF files using Larg
 
 ## Overview
 
-This tool addresses the competency test requirement to build an LLM-powered system that extracts structured data from resume PDFs. It handles both digitally-generated and scanned documents, outputs structured JSON, and includes a systematic evaluation method.
+This tool demonstrates advanced LLM capabilities for document processing and structured data extraction. It automatically extracts key information from resume PDFs, handles multiple document formats, and provides quality assessment of the extraction results.
 
 ## Technology Stack
 
@@ -21,19 +21,17 @@ This tool addresses the competency test requirement to build an LLM-powered syst
 - **Scanned PDFs**: OCR processing with high-resolution strategy
 - Handles both formats seamlessly through UnstructuredLoader
 
-### Required Field Extraction
-Extracts all 8 required fields as JSON:
-- **Name**: Full candidate name
-- **Email**: Valid email address  
-- **Phone**: Phone number
-- **Skills**: List of technical and professional skills
+### Structured Data Extraction
+Extracts comprehensive resume information as JSON:
+- **Personal Information**: Name, Email, Phone
+- **Professional Skills**: Technical and soft skills list
 - **Education**: Degree, institution, graduation year
 - **Experience**: Job title, company, years worked, description
 - **Certifications**: Professional certifications
 - **Languages**: Spoken/written languages
 
-### LLM-Based Validation
-Systematic evaluation method using the same LLM:
+### LLM-Based Quality Assessment
+Automated validation using the same LLM:
 - **0-10 scoring** for each field and overall quality
 - **Coverage analysis**: Completeness assessment
 - **Accuracy review**: Correctness evaluation
@@ -97,6 +95,13 @@ validation_result = await validate_extracted_data(fields_description, extracted_
 └── README.md              # Documentation
 ```
 
+## Use Cases
+
+- **HR Automation**: Streamline resume screening and candidate data extraction
+- **Recruitment Tools**: Build intelligent resume parsing systems
+- **Document Processing**: Extract structured data from unstructured documents
+- **LLM Research**: Study prompt engineering and validation techniques
+
 ## Limitations & Future Improvements
 
 ### Current Limitations
@@ -111,4 +116,4 @@ validation_result = await validate_extracted_data(fields_description, extracted_
 - Confidence scoring for individual extractions
 - Integration with ground truth validation datasets
 
-This implementation fully addresses the competency test requirements: handles multiple PDF formats, extracts all required fields as JSON, and provides a systematic LLM-based evaluation method.
+This implementation showcases modern LLM capabilities for document processing, structured data extraction, and automated quality assessment in real-world applications.
