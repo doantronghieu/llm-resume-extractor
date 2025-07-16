@@ -1,0 +1,13 @@
+# LangChain Core Packages
+langchain==0.3.26
+langchain-core==0.3.66
+langchain-community==0.3.26
+
+# LangChain Provider Integrations
+langchain-openai==0.3.27
+
+# Document Processing
+unstructured[pdf]
+
+# Web Interface
+streamlit
